@@ -84,7 +84,7 @@ class CategoriesController extends Controller
     }
     public function delete($id)
     {
-    	$category = Category::where('id',$input['id'])->delete();
+    	$category = Category::where('id',$id)->delete();
     	return redirect('categories');
     }
 

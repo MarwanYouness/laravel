@@ -29,7 +29,7 @@
         Route::get('categories/{id}','CategoriesController@list');
         Route::get('posts/{id}','PostController@show');
         Route::get('categories/{id}/edit','CategoriesController@edit');
-        Route::post('deletecat/{id}','CategoriesController@delete');
+        Route::get('categories/{id}/delete', ['uses' => 'CategoriesController@delete']);
        
     });
 

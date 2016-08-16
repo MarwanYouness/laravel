@@ -5,7 +5,7 @@
 
 <ul>
 @foreach ($categories as $translation)
-<li><a href="deletecat/{{$translation->id}}">{{ $translation->name }}</a></li>
+<li><a href="{{$translation->id}}/delete">{{ $translation->name }}</a></li>
 @endforeach
 </ul>
 

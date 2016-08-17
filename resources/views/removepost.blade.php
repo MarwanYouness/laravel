@@ -4,7 +4,7 @@
 	<h1>{{trans('adminlte_lang::message.delete')}}</h1>
 
 <ul>
-@foreach ($categories as $translation)
+@foreach ($posts as $translation)
 <li><a href="{{$translation->id}}/delete">{{ $translation->name }}</a></li>
 @endforeach
 </ul>

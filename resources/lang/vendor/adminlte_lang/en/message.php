@@ -133,4 +133,7 @@ return [
     'edit'                      =>'Edit',
     'delete'                    =>'Delete',
     'readmore'                  =>'Read More',
+    'users'                     =>'Users',
+    'arname'                    =>'Arabic Name',
+    'englishname'               =>'English Name',
 ];

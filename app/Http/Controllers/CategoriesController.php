@@ -22,7 +22,7 @@ class CategoriesController extends Controller
 
     public function list($id)
     {
-    	$posts = Post::where('cat_id', $id)->get();
+    	$posts = Post::where('cat_id', $id)->simplePaginate(10);
     	return view('posts',compact('posts'));
 
     }
@@ -65,13 +65,11 @@ class CategoriesController extends Controller
     public function update()
     {
     	$input = Request::all();
-    	$data = array();
-    	
-		 $data = [
+		$data = [
     	'name' => $input['name']
   ];
     	
-   		$category = CategoryTranslation::where('id',$input['id'])->update($data);
+   		$category = CategoryTranslation::where('category_id',$input['id'])->where('locale',App::getLocale())->update($data);
    		return redirect('categories');
 
     }

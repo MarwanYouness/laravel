@@ -11,8 +11,10 @@ class User extends Authenticatable
      *
      * @var array
      */
+    use \Dimsav\Translatable\Translatable;
+    public $translatedAttributes = ['name'];
     protected $fillable = [
-        'name', 'email', 'password',
+     'email', 'password',
     ];
 
     /**

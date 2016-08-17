@@ -55,19 +55,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/')}}"><b>Today News</b></a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url('/')}}" class="smoothScroll">{{ trans('adminlte_lang::message.home') }}</a></li>
-                <li><a href="{{ url('categories')}}">{{ trans('adminlte_lang::message.categories') }}</li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
-                    <li><a href="{{ url('/login') }}">{{ trans('adminlte_lang::message.login') }}</a></li>
-                    <li><a href="{{ url('/register') }}">{{ trans('adminlte_lang::message.register') }}</a></li>
-                    <li> 
-                    <div class="dropdown">
+            <div class="dropdown">
   <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
   <i class="fa fa-globe" aria-hidden="true"></i>
   <span class="caret"></span></button>
@@ -80,7 +68,20 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </li>
     @endforeach
   </ul>
-</div></li>
+</div>
+            <a class="navbar-brand" href="{{ url('/')}}"><b>Today News</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url('/')}}" class="smoothScroll">{{ trans('adminlte_lang::message.home') }}</a></li>
+                <li><a href="{{ url('categories')}}">{{ trans('adminlte_lang::message.categories') }}</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @if (Auth::guest())
+                    <li><a href="{{ url('/login') }}">{{ trans('adminlte_lang::message.login') }}</a></li>
+                    <li><a href="{{ url('/register') }}">{{ trans('adminlte_lang::message.register') }}</a></li>
+                    <li> 
+                    </li>
                 @else
                     <li><a href="/home">{{ Auth::user()->name }}</a></li>
                 @endif

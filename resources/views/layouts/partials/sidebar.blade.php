@@ -43,9 +43,17 @@
              <li class="treeview">
                 <a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.posts') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.add') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.edit') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.delete') }}</a></li>
+                    <li><a href="post/create">{{ trans('adminlte_lang::message.add') }}</a></li>
+                    <li><a href="post/list">{{ trans('adminlte_lang::message.edit') }}</a></li>
+                    <li><a href="post/remove">{{ trans('adminlte_lang::message.delete') }}</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.users') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="user/create">{{ trans('adminlte_lang::message.add') }}</a></li>
+                    <li><a href="user/list">{{ trans('adminlte_lang::message.edit') }}</a></li>
+                    <li><a href="user/remove">{{ trans('adminlte_lang::message.delete') }}</a></li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

@@ -14,12 +14,12 @@ return [
     */
 
     'logged'                  => 'You are logged in!',
-    'someproblems'            => 'There were some problems with your input.',
+    'someproblems'            => 'خطأ فى البيانات.',
     'siginsession'            => 'Sign in to start your session',
     'remember'                => 'Remember Me',
     'buttonsign'              => 'Sign In',
     'forgotpassword'          => 'I forgot my password',
-    'registermember'          => 'Register a new membership',
+    'registermember'          => 'انشىء حساب',
     'terms'                   => 'I agree to the terms',
     'conditions'              => 'Terms and conditions',
     'register'                => 'تسجيل',
@@ -133,4 +133,7 @@ return [
     'edit'                      =>'تعديل',
     'delete'                    =>'حذف',
     'readmore'                  =>'اقرأ المزيد',
+    'users'                     =>'المستخدمين',
+    'arname'                    =>'الاسم بالعربية',
+    'englishname'               =>'الاسم بالانكليزية',
 ];
